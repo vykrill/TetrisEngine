@@ -1,7 +1,7 @@
 #  GLB-APP0003
 ## Tetris engine library
 
-Language: C++
+Language: C++, C, Swift
 
 The objectives of this library is to provide a simple, universal and multiplatform tetris game engine
 
@@ -10,7 +10,7 @@ The objectives of this library is to provide a simple, universal and multiplatfo
     + Start of the developement of the tetris engine.
     
 - *ver 0.1.1* 9 dec 2019
-    + The main class is operationnal. It can ouput its content and basic falling mechanic is properly implemented.
+    + The main class is operationnal. It can ouput its content and a basic falling mechanic is properly implemented.
     
 - *ver 0.1.1* 14 dec 2019
     + Starting using source control.
@@ -60,7 +60,8 @@ The objectives of this library is to provide a simple, universal and multiplatfo
     + added `CTetrisEngine` library
     
 - *ver 0.8.0* 10 nov 2020
-    + added `TetrisEngine` (the Swift version).
+    + created `TetrisEngine` (the Swift version).
+    + configured `TetrisEngineTests`
 
 #### Unreleased
 
