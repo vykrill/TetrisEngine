@@ -9,6 +9,7 @@
 extern "C" { 
 #endif
 
+    // The list of actions executable by the CTetrisGameHandler
 enum CTetrisActions: int {
     moveLeft    = 0,
     moveRight   = 1,
@@ -40,17 +41,21 @@ CTetrisGameHandler CTetrisCreateGameHandler(struct TetrisGameConfiguration confi
 //  your CTetrisGameHandler instance.
 void CTetrisFreeGameHandler(CTetrisGameHandler handler);
 
-// CppTetrisGameHandler calls compatible with Swift
+// MARK: CppTetrisGameHandler calls compatible with Swift
 
+// Returns the width of the game's matrix.
 unsigned int CTetrisGetMatrixWidth(CTetrisGameHandler handler);
+// Returns the height of the game's matrix
 unsigned int CTetrisGetMatrixHeight(CTetrisGameHandler handler);
 
+// Returns the shape the player is controlling.
 char CTetrisGetCurrentShapeIdentifier(CTetrisGameHandler handler);
+// Returns the content of the specified cell.
 char CTetrisGetCellStateAt(CTetrisGameHandler handler, int x, int y);
 
 // Performs game logic.
 struct TetrisUpdateState CTetrisUpdateGameHandler(CTetrisGameHandler handler, double timeDelta);
-
+// Unpauses the game.
 void CTetrisUnpauseGame(CTetrisGameHandler handler);
 void CTetrisPrintGameStatus(CTetrisGameHandler handler);
 void CTetrisPerformAction(CTetrisGameHandler handler, enum CTetrisActions action);

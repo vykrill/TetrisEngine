@@ -32,9 +32,13 @@ struct CppTetrisGameHandler: tetris::GameDelegate {
     // Returns the content of the requested cell.
     char getMatrixStateAt(int x, int y);
 
+    // Returns the width of the game's matrix.
     unsigned int getMatrixWidth();
+    // Returns the height of the game's matrix.
     unsigned int getMatrixHeight();
+    // Returns the id of the shape the player is controlling.
     char getCurrentTetrominoIdentifier();
+    // Executes an action in the game.
     void sendAction(tetris::Actions action);
 
     // MARK: Delegate methods
