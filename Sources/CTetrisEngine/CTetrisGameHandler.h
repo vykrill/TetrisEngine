@@ -46,7 +46,7 @@ unsigned int CTetrisGetMatrixWidth(CTetrisGameHandler handler);
 unsigned int CTetrisGetMatrixHeight(CTetrisGameHandler handler);
 
 char CTetrisGetCurrentShapeIdentifier(CTetrisGameHandler handler);
-char CTEtrisGetCellStateAt(CTetrisGameHandler handler, int x, int y);
+char CTetrisGetCellStateAt(CTetrisGameHandler handler, int x, int y);
 
 // Performs game logic.
 struct TetrisUpdateState CTetrisUpdateGameHandler(CTetrisGameHandler handler, double timeDelta);
