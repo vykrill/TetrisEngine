@@ -41,8 +41,8 @@ public class TetrisGameHandler {
     }
 
     // Execute an acton in the game handler
-    public func perform(action: CTetrisActions) {
-        CTetrisPerformAction(cHandler, action)
+    public func perform(action: Action) {
+        CTetrisPerformAction(cHandler, CTetrisActions(action.rawValue))
     }
 
     // Unpauses the game.
