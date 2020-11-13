@@ -21,8 +21,6 @@ enum CTetrisActions: int {
     hold        = 8
 };
 
-typedef enum CTetrisAction CTetrisAction;
-
 // A C pointer to the C++ type CppTetrisGameHandler.
 //
 // It is the link between the C and C++ code which will
@@ -55,7 +53,7 @@ struct TetrisUpdateState CTetrisUpdateGameHandler(CTetrisGameHandler handler, do
 
 void CTetrisUnpauseGame(CTetrisGameHandler handler);
 void CTetrisPrintGameStatus(CTetrisGameHandler handler);
-void CTetrisPerformAction(CTetrisGameHandler handler, CTetrisAction action);
+void CTetrisPerformAction(CTetrisGameHandler handler, enum CTetrisActions action);
 
 #ifdef __cplusplus
 }
