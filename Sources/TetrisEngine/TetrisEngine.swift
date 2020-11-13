@@ -10,7 +10,7 @@ public class TetrisGameHandler {
 
     // Returns a new game handler configured with the
     //  specified settings.
-    public init(configuration: TetrisGameConfiguration) {
+    public init(configuration: TetrisGameConfiguration = TetrisGameHandler.defaultConfig) {
         self.cHandler = CTetrisCreateGameHandler(configuration)
     }
 
@@ -53,5 +53,10 @@ public class TetrisGameHandler {
     // Print the game matrix and related informations.
     public func printStatus() {
         CTetrisPrintGameStatus(cHandler)
+    }
+
+    // The default game configuration.
+    public static var defaultConfig: TetrisGameConfiguration {
+        getDefaultTetrisGameConfiguration()
     }
 }
