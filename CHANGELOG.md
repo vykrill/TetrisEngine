@@ -61,8 +61,6 @@ The objectives of this library is to provide a simple, universal and multiplatfo
     
 - *ver 0.8.0* 10 nov 2020
     + added `TetrisEngine` (the Swift version).
-#### Unreleased
 
-### TODO
-- Implement a structure for controlling game settings
+#### Unreleased
 
