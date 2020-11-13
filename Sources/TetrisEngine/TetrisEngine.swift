@@ -2,11 +2,16 @@
 import Foundation
 import CTetrisEngine
 
+// A Tetris game.
 public class TetrisGameHandler {
     private var cHandler: OpaquePointer
 
     public init(configuration: TetrisGameConfiguration) {
         self.cHandler = CTetrisCreateGameHandler(configuration)
+    }
+
+    deinit {
+        CTetrisFreeGameHandler(cHandler)
     }
 
     public var width:  UInt32 { CTetrisGetMatrixWidth(cHandler)}
