@@ -1,6 +1,6 @@
 import Foundation
 
-enum Shape: Int8 {
+public enum Shape: Int8 {
     case I = 1
     case O = 2    
     case T = 3
