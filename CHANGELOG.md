@@ -59,6 +59,8 @@ The objectives of this library is to provide a simple, universal and multiplatfo
     + Removed dependendy from cmath
     + added `CTetrisEngine` library
     
+- *ver 0.8.0* 10 nov 2020
+    + added `TetrisEngine` (the Swift version).
 #### Unreleased
 
 ### TODO
