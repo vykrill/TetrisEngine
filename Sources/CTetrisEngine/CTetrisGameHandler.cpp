@@ -24,7 +24,7 @@ extern "C" {
         return handler->getCurrentTetrominoIdentifier();
     }
 
-    char CTEtrisGetCellStateAt(CTetrisGameHandler handler, int x, int y) {
+    char CTetrisGetCellStateAt(CTetrisGameHandler handler, int x, int y) {
         return handler->getMatrixStateAt(x, y);
     }
 
