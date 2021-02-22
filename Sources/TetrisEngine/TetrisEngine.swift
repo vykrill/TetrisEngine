@@ -29,6 +29,11 @@ public class TetrisGameHandler {
         return Shape(rawValue: CTetrisGetCurrentShapeIdentifier(cHandler))!
     }
 
+    /// The shape holded by the player.
+    public var holdedShape: Shape {
+        return Shape(rawValue: CTetrisGetHoldedShapeIdentifier(cHandler))!
+    }
+
     // Perform game logic.
     // - return: The state of the game.
     public func update(with timeDelta: Double) -> TetrisUpdateState {

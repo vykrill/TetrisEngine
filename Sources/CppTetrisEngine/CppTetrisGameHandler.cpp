@@ -48,6 +48,10 @@ char CppTetrisGameHandler::getCurrentTetrominoIdentifier() {
     return static_cast<char>(m_game.getCurrentShape());
 }
 
+char CppTetrisGameHandler::getHoldedTetrominoIdentifier() {
+    return static_cast<char>(m_game.getHoldedShape());
+}
+
 void CppTetrisGameHandler::sendAction(tetris::Actions action) {
     m_game.performAction(action);
 }

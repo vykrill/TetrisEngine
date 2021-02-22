@@ -50,6 +50,8 @@ unsigned int CTetrisGetMatrixHeight(CTetrisGameHandler handler);
 
 // Returns the shape the player is controlling.
 char CTetrisGetCurrentShapeIdentifier(CTetrisGameHandler handler);
+// Returns the shape the player is holding.
+char CTetrisGetHoldedShapeIdentifier(CTetrisGameHandler handler);
 // Returns the content of the specified cell.
 char CTetrisGetCellStateAt(CTetrisGameHandler handler, int x, int y);
 

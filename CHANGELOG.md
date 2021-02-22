@@ -5,6 +5,9 @@ Language: C++, C, Swift
 
 The objectives of this library is to provide a simple, universal and multiplatform tetris game engine
 
+### Unreleased
+- Added the possibility to retrieve the holded shape with the game handlers.
+
 ### **History**
 - *ver 0.1.0* 4 dec 2019
     + Start of the developement of the tetris engine.

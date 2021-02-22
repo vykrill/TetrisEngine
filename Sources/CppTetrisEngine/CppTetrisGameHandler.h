@@ -38,6 +38,8 @@ struct CppTetrisGameHandler: tetris::GameDelegate {
     unsigned int getMatrixHeight();
     // Returns the id of the shape the player is controlling.
     char getCurrentTetrominoIdentifier();
+    // Returns the id of the shape the player is holding.
+    char getHoldedTetrominoIdentifier();
     // Executes an action in the game.
     void sendAction(tetris::Actions action);
 
