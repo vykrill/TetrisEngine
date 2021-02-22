@@ -16,4 +16,58 @@ public enum Shape: Int8 {
     case empty = 127
     // A cell containing the current piece.
     case current = 126   
+
+    /// The shape of the tetrominos
+    static let grids: [Shape: [[Shape]]] = [
+        .I: [
+            [.empty, .empty, .empty, .empty],
+            [.empty, .empty, .empty, .empty],
+            [.I    , .I    , .I    , .I    ],
+            [.empty, .empty, .empty, .empty]
+            ],
+        .O: [
+            [.empty, .empty, .empty, .empty],
+            [.empty, .O    , .O    , .empty],
+            [.empty, .O    , .O    , .empty],
+            [.empty, .empty, .empty, .empty]
+            ],
+        .T: [
+            [.empty, .empty, .empty, .empty],
+            [.empty, .T    , .empty, .empty],
+            [.T    , .T    , .T    , .empty],
+            [.empty, .empty, .empty, .empty]
+            ],
+        .S: [
+            [.empty, .empty, .empty, .empty],
+            [.empty, .empty, .S    , .S    ],
+            [.empty, .S    , .S    , .empty],
+            [.empty, .empty, .empty, .empty]
+            ],
+        .Z: [
+            [.empty, .empty, .empty, .empty],
+            [.Z    , .Z    , .empty, .empty],
+            [.empty, .Z    , .Z    , .empty],
+            [.empty, .empty, .empty, .empty]
+            ],
+        .J: [
+            [.empty, .empty, .J    , .empty],
+            [.empty, .empty, .J    , .empty],
+            [.empty, .J    , .J    , .empty],
+            [.empty, .empty, .empty, .empty]
+            ],
+        .L: [
+            [.empty, .L    , .empty, .empty],
+            [.empty, .L    , .empty, .empty],
+            [.empty, .L    , .L    , .empty],
+            [.empty, .empty, .empty, .empty]
+            ],
+        .rage: [
+            [.empty, .rage , .empty, .empty],
+            [.rage , .empty, .rage , .empty],
+            [.empty, .rage , .empty, .empty],
+            [.empty, .empty, .empty, .empty]
+            ],
+        .empty: [[Shape]](repeating: [Shape](repeating: .empty, count: 4), count: 4)
+        
+    ]
 }

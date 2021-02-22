@@ -7,6 +7,7 @@ The objectives of this library is to provide a simple, universal and multiplatfo
 
 ### Unreleased
 - Added the possibility to retrieve the holded shape with the game handlers.
+- You can access the shape of the tetrominos with `Shape.grids`.
 
 ### **History**
 - *ver 0.1.0* 4 dec 2019
