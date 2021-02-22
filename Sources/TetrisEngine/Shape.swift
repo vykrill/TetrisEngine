@@ -18,7 +18,7 @@ public enum Shape: Int8 {
     case current = 126   
 
     /// The shape of the tetrominos
-    static let grids: [Shape: [[Shape]]] = [
+    static public let grids: [Shape: [[Shape]]] = [
         .I: [
             [.empty, .empty, .empty, .empty],
             [.empty, .empty, .empty, .empty],
