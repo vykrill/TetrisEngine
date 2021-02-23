@@ -10,7 +10,7 @@ public class TetrisGameHandler {
 
     // Returns a new game handler configured with the
     //  specified settings.
-    public init(configuration: TetrisGameConfiguration = TetrisGameHandler.defaultConfig) {
+    public init(configuration: Configuration = TetrisGameHandler.defaultConfig) {
         self.cHandler = CTetrisCreateGameHandler(configuration)
     }
 
@@ -61,7 +61,7 @@ public class TetrisGameHandler {
     }
 
     // The default game configuration.
-    public static var defaultConfig: TetrisGameConfiguration {
+    public static var defaultConfig: Configuration {
         getDefaultTetrisGameConfiguration()
     }
 }
