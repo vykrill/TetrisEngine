@@ -48,5 +48,6 @@ let package = Package(
             name: "CTetrisEngine",
             dependencies: ["CppTetrisEngine"]
         )
-    ]
+    ],
+    cxxLanguageStandard: .cxx14
 )
